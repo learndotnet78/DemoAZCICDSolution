@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aTIBVsjcrtaaGJpPewIUslyUEj8BNO7JP2103HEFDKY=",
+  "Source": "DemoAZCICD",
+  "BasePath": "_content/DemoAZCICD",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

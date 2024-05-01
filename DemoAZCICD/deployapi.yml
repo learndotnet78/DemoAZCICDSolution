@@ -1,0 +1,23 @@
+﻿name : Deploy demo API in azure
+
+on:
+    workflow_displatch
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v3
+          - name: Setup .Net Core
+            uses: actions/setup-checkout@v3
+            with: 
+              dotnet-version: 8.0.x
+
+
+          - name: Install dependencies
+            run: dotnet restore ./DemoAZCICD.csproj
+
+          - name: Build
+            run: dotnet build ./DemoAZCICD.csproj --configuration Release --no-restore
+
+  
